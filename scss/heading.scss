@@ -13,13 +13,22 @@
   &--one {
     font-size: 4rem;
     font-weight: 700;
+  }
+
+  &--two {
+    font-size: 2rem;
+    }
+
+  &--forsidaone {
+    font-size: 4rem;
+    font-weight: 700;
     opacity: 0;
     animation: 1s fadeIn ease-in;
     animation-delay: 2s;
     animation-fill-mode: forwards;
   }
 
-  &--two {
+  &--forsidatwo {
     font-size: 2rem;
     opacity: 0;
     animation: 1s fadeIn ease-in;
@@ -36,4 +45,11 @@
     font-style: italic;
   }
 
+}
+
+.button--forsida {
+  opacity: 0;
+  animation: 1s fadeIn ease-in;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
 }
