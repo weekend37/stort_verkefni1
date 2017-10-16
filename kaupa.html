@@ -36,7 +36,7 @@
       </header>
 
       <section class="form">
-        <fieldset class="content">
+        <fieldset class="content-offset-1">
           <legend class="heading heading--form">Persónuupplýsingar</legend>
           <div class="input">
             <label class="item" for="name"> Nafn:</label>
@@ -52,16 +52,16 @@
           <div class="input">
             <label>Kyn:</label>
             <div class="item">
-              <input type="radio" id="female" required>
-              <label for="female">Kona</label>
+              <input class="radio" type="radio" id="female" required>
+              <label class="inline-label" for="female">Kona</label>
             </div>
             <div class="item">
-              <input type="radio" id="male">
-              <label for="male">Karl</label>
+              <input class="radio" type="radio" id="male">
+              <label class="inline-label" for="male">Karl</label>
             </div>
             <div class="item">
-              <input type="radio" id="other">
-              <label for="other">Annað</label>
+              <input class="radio" type="radio" id="other">
+              <label class="inline-label" for="other">Annað</label>
             </div>
           </div>
 
@@ -78,12 +78,12 @@
 
           <div class="item">
             <input id="checkbox" type="checkbox" checked>
-            <label for="checkbox"> Skrá mig á póstlista</label>
+            <label class="inline-label" for="checkbox"> Skrá mig á póstlista</label>
           </div>
 
         </fieldset>
 
-        <fieldset class="content">
+        <fieldset class="content-offset-7">
           <legend class="heading heading--form">Greiðsluupplýsingar</legend>
           <div class="input">
             <label for="fop"> Greiða með:</label>
@@ -102,28 +102,30 @@
 
           <div class="input">
             <label>Gildistími:</label>
-            <label class="item" for="month"> Mán:</label>
-            <select class="item" id="month" required>
-              <option value="01">01</option>
-              <option value="02">02</option>
-              <option value="03">03</option>
-              <option value="04">04</option>
-              <option value="05">05</option>
-              <option value="06">06</option>
-              <option value="07">07</option>
-              <option value="08">08</option>
-              <option value="09">09</option>
-              <option value="10">10</option>
-              <option value="11">11</option>
-              <option value="12">12</option>
-            </select>
-            <label class="item" for="year"> Ár:</label>
-            <select class="item" id="year" required>
-              <option value="2017">2017</option>
-              <option value="2018">2018</option>
-              <option value="2019">2019</option>
-              <option value="2020">2020</option>
-            </select>
+            <div class="item item__expiry">
+              <label class="label" for="month"> Mán:</label>
+              <select class="dropselect" id="month" required>
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+              <label class="label" for="year"> Ár:</label>
+              <select class="dropselect" id="year" required>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+              </select>
+            </div>
           </div>
         </fieldset>
       </section>

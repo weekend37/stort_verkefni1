@@ -1,20 +1,60 @@
 .form {
   display: flex;
-  justify-content: space-around;
-  align-content: space-around;
+  margin-top: 80px;
+  // justify-content: space-around;
+  // align-items: flex-start;
 }
 
-.content {
+.content-offset-1 {
   display: flex;
+  width: 32.3%;
   flex-direction: column;
   border: none;
+  margin-left: 8.5%;
+}
+
+.content-offset-7 {
+  display: flex;
+  width: 32.3%;
+  flex-direction: column;
+  border: none;
+  margin-left: 18.4%;
 }
 
 .input {
   display: flex;
   flex-direction: column;
+  padding-bottom: 20px;
 }
 
 .item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  &__expiry {
+    justify-content: space-between;
+  }
+}
+
+.inline-label {
+  padding-left: 20px;
+}
+
+input {
+  font-size: 1rem;
+  padding: 3px 0 3px 4px;
+}
+
+// .item__expiry {
+//   display: flex;
+//   justify-content: space-between;
+// }
+
+.label {
+  display: flex;
+}
+
+.dropselect {
   display: flex;
 }
