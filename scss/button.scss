@@ -29,16 +29,19 @@
     transition-timing-function: ease;
     transition-duration: 500ms;
   }
-  .button--valmynd {
+  &--valmynd {
     display: block;
 
     width: 100%;
     max-width: 5em;
+    padding: 4px 8px 4px 8px;
     margin: auto;
     overflow: hidden;
     font-family: Lato, helvetica, arial, sans-serif;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: #eee;
+
+    border-radius: 4px;
     text-align: center;
     text-decoration: none;
     text-overflow: ellipsis;
@@ -46,11 +49,10 @@
     cursor: pointer;
   }
 
-}
-
-.button--forsida {
+&--forsida {
   opacity: 0;
   animation: 1s fadeIn ease-in;
   animation-delay: 3s;
   animation-fill-mode: forwards;
+}
 }
