@@ -35,25 +35,30 @@
         <fieldset class="content">
           <legend class="heading heading--form">Persónuupplýsingar</legend>
           <div class="input">
-            <label class="label" for="name"> Nafn:</label>
-            <input class="textbox" required type="text" id="name">
+            <label class="item" for="name"> Nafn:</label>
+            <input class="item" required type="text" id="name">
           </div>
 
           <div class="input">
-            <label class="label" for="kennitala"> Kennitala:</label>
-            <input class="textbox" required type="text" id="kennitala" pattern="[0-9]{6}-[0-9]{4}"
+            <label class="item" for="kennitala"> Kennitala:</label>
+            <input class="item" required type="text" id="kennitala" pattern="[0-9]{6}-[0-9]{4}"
             required placeholder="123456-7890">
           </div>
 
           <div class="input">
-            <input type="radio" id="female" required>
-            <label for="gender">Kona</label>
-
-            <input type="radio" id="male">
-            <label for="male">Karl</label>
-
-            <input type="radio" id="other">
-            <label for="other">Annað</label>
+            <label>Kyn:</label>
+            <div class="item">
+              <input type="radio" id="female" required>
+              <label for="female">Kona</label>
+            </div>
+            <div class="item">
+              <input type="radio" id="male">
+              <label for="male">Karl</label>
+            </div>
+            <div class="item">
+              <input type="radio" id="other">
+              <label for="other">Annað</label>
+            </div>
           </div>
 
           <div class="input">
@@ -63,11 +68,11 @@
           </div>
 
           <div class="input">
-            <label class="label" for="address"> Heimilisfang:</label>
-            <input class="textbox" type="text" id="address" required>
+            <label class="item" for="address"> Heimilisfang:</label>
+            <input class="item" type="text" id="address" required>
           </div>
 
-          <div class="input">
+          <div class="item">
             <input id="checkbox" type="checkbox" checked>
             <label for="checkbox"> Skrá mig á póstlista</label>
           </div>
@@ -78,7 +83,7 @@
           <legend class="heading heading--form">Greiðsluupplýsingar</legend>
           <div class="input">
             <label for="fop"> Greiða með:</label>
-            <select id="fop" required>
+            <select class="item" id="fop" required>
               <option value="card">Kreditkorti</option>
               <option value="wire">Millifærslu</option>
               <option value="cash">Reiðufé</option>
@@ -86,14 +91,15 @@
           </div>
 
           <div class="input">
-            <label class="label" for="cardholder"> Nafn á korti:</label>
-            <input class="textbox" required type="text" id="cardholder"
+            <label class="item" for="cardholder"> Nafn á korti:</label>
+            <input class="item" required type="text" id="cardholder"
             pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" placeholder="5999-9999-9999-9999">
           </div>
 
           <div class="input">
-            <label for="month"> Mán:</label>
-            <select id="month" required>
+            <label>Gildistími:</label>
+            <label class="item" for="month"> Mán:</label>
+            <select class="item" id="month" required>
               <option value="01">01</option>
               <option value="02">02</option>
               <option value="03">03</option>
@@ -107,8 +113,8 @@
               <option value="11">11</option>
               <option value="12">12</option>
             </select>
-            <label for="year"> Ár:</label>
-            <select id="year" required>
+            <label class="item" for="year"> Ár:</label>
+            <select class="item" id="year" required>
               <option value="2017">2017</option>
               <option value="2018">2018</option>
               <option value="2019">2019</option>
@@ -117,6 +123,7 @@
           </div>
         </fieldset>
       </section>
+
       <button class="button button--kaupa">Panta</button>
 
     </main>
