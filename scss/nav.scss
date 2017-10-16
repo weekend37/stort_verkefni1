@@ -1,0 +1,44 @@
+    nav {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      background: lightgrey;
+    }
+
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      justify-content: space-between;
+    }
+
+    .left {
+      text-align: right;
+      flex-direction: row;
+    }
+
+    .right {
+      text-align: right;
+      flex-direction: row;
+    }
+
+
+      .menu {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-width: 1200px;
+        height: 60px;
+      }
+
+      nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        max-width: 1200px;
+      }

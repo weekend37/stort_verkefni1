@@ -1,0 +1,113 @@
+// breytur fyrir mikið notaðar stærðir
+$max-width: 1200px;
+$gutter: 20px;
+
+/* setjum box-sizing: border-box; á allt */
+html { /* stylelint-disable-line */
+  box-sizing: border-box;
+}
+
+*, *:before, *:after { /* stylelint-disable-line */
+  box-sizing: inherit;
+
+  /* fjarlægjum margin og padding */
+  padding: 0;
+  margin: 0;
+}
+
+html { /* stylelint-disable-line */
+  // til þess að texti liggi ekki upp við brún á viewport þegar
+  // við erum < 1200px breiðum skjá, setjum margin á báða kanta html
+  // ruglar líka ekki í grid overlay
+  margin-right: $gutter;
+  margin-left: $gutter;
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+
+  @media (min-width: $max-width) {
+    margin: 0;
+  }
+}
+
+.img_page {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -10px;
+      margin-right: -10px;
+    }
+
+    .col {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .col-12 {
+      width: 100%;
+    }
+
+    .col-8 {
+      width: 66.6666666%;
+    }
+
+    .col-4 {
+      width: 33.33%;
+      float: inherit;
+    }
+
+    .col-6{
+      width: 50%;
+      float: inherit;
+    }
+
+    .offset-3 {
+      margin-left: 25%;
+    }
+
+    @media (max-width: 599px) {
+      .col-sm-12 {
+        width: 50%;
+      }
+
+      .col-sm-6 {
+        width: 50%;
+      }
+
+      .col-sm-3 {
+        width: 25%;
+      }
+
+    }
+
+
+.card{
+  width: 50%;
+  float: inherit;
+}
+img { /* stylelint-disable-line */
+  max-width: $max-width;
+}
+
+main { /* stylelint-disable-line */
+  max-width: $max-width;
+  margin: 0 auto;
+
+  // þar sem við erum að eiga við neikvæð margin á grid, setjum overflow-x
+  // hér sem hidden, þá fáum við ekki lárétta skrunstiku
+  overflow-x: hidden;
+}
+
+@import "scss/grid";
+@import "scss/nav";
+@import "scss/header";
+@import "scss/heading";
+//@import "scss/text";
+@import "scss/button";
+//@import "scss/card";
+//@import "scss/cardlist";

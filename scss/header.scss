@@ -1,0 +1,43 @@
+.header {
+  width: 100%;
+  margin-bottom: 2em;
+  background-size: cover;
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header--forsida {
+  height: 900px;
+  background: transparent url(bg.jpg) no-repeat fixed 50% 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mynd{
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-direction: column;
+  text-align: center;
+}
+
+.header--um {
+  height: 500px;
+  background: transparent url(bg-subpage.jpg) no-repeat fixed 50% 50%;
+}
+
+.header--kaupa {
+  height: 500px;
+  background: transparent url(bg-subpage.jpg) no-repeat fixed 50% 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mynd__kaupa {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  color: #fff;
+  padding-left: 5px;
+}
