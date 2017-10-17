@@ -91,7 +91,9 @@ html { /* stylelint-disable-line */
   float: inherit;
 }
 img { /* stylelint-disable-line */
-  max-width: $max-width;
+  max-width: 1600px;
+  width: 100%;
+
 }
 
 main { /* stylelint-disable-line */
