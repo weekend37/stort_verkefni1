@@ -48,7 +48,7 @@
             required placeholder="123456-7890">
           </div>
 
-          <div class="input">
+          <div class="input input__gender">
             <label>Kyn:</label>
             <div class="item">
               <input class="radio" type="radio" id="female" required>
@@ -86,44 +86,53 @@
           <legend class="heading heading--form">Greiðsluupplýsingar</legend>
           <div class="input">
             <label for="fop"> Greiða með:</label>
-            <select class="item" id="fop" required>
-              <option value="card">Kreditkorti</option>
-              <option value="wire">Millifærslu</option>
-              <option value="cash">Reiðufé</option>
-            </select>
+            <div class="item">
+              <select class="dropselect" id="fop" required>
+                <option value="card">Kreditkorti</option>
+                <option value="wire">Millifærslu</option>
+                <option value="cash">Reiðufé</option>
+              </select>
+            </div>
           </div>
 
           <div class="input">
             <label class="item" for="cardholder"> Nafn á korti:</label>
-            <input class="item" required type="text" id="cardholder"
+            <input class="item" required type="text" id="cardholder">
+          </div>
+
+          <div class="input">
+            <label class="item" for="card-no"> Nafn á korti:</label>
+            <input class="item" required type="text" id="card-no"
             pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" placeholder="5999-9999-9999-9999">
           </div>
 
           <div class="input">
             <label>Gildistími:</label>
             <div class="item item__expiry">
-              <label class="label" for="month"> Mán:</label>
-              <select class="dropselect" id="month" required>
-                <option value="01">01</option>
-                <option value="02">02</option>
-                <option value="03">03</option>
-                <option value="04">04</option>
-                <option value="05">05</option>
-                <option value="06">06</option>
-                <option value="07">07</option>
-                <option value="08">08</option>
-                <option value="09">09</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-              </select>
-              <label class="label" for="year"> Ár:</label>
-              <select class="dropselect" id="year" required>
-                <option value="2017">2017</option>
-                <option value="2018">2018</option>
-                <option value="2019">2019</option>
-                <option value="2020">2020</option>
-              </select>
+              <div class="dropselect">
+                <label class="label" for="month"> Mán</label>
+                <select class="dropselect dropselect--expiry" id="month" required>
+                  <option value="01">01</option>
+                  <option value="02">02</option>
+                  <option value="03">03</option>
+                  <option value="04">04</option>
+                  <option value="05">05</option>
+                  <option value="06">06</option>
+                  <option value="07">07</option>
+                  <option value="08">08</option>
+                  <option value="09">09</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+                <label class="label" for="year"> Ár</label>
+                <select class="dropselect dropselect--expiry" id="year" required>
+                  <option value="2017">2017</option>
+                  <option value="2018">2018</option>
+                  <option value="2019">2019</option>
+                  <option value="2020">2020</option>
+                </select>
+              </div>
             </div>
           </div>
         </fieldset>
