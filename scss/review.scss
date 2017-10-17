@@ -1,28 +1,36 @@
-.commentakerfi{
+.upprodun{
 display: flex;
-padding-top: 50px;
-margin-left: -10px;
-margin-right: -10px;
+flex-direction: row;
+margin-top: 8em;
+}
+
+.commentakerfi{
+width: 50%;
+margin-top: 7em;
+margin-bottom: 5em;
 }
 
 .comment{
-width: 50%;
-padding-left: 10px;
 padding-right: 10px;
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+margin-bottom: 4em;
 }
 
 .img_check{
-  display: inline;
-  width: 5%;
+  width: 30px;
+  height: 30px;
   padding-right: 5px;
 }
 
 .image {
-  display: block;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  display: flex;
   width: 50%;
   height: 50%;
   padding-left: 10px;
-  padding-right: 10px;
 }
 
 .profile{
@@ -39,6 +47,7 @@ width: 25%;
 padding-left: 10px;
 padding-right: 10px;
 text-align: center;
+justify-content: flex-end; 
 }
 
 .img_profile{
@@ -46,10 +55,4 @@ text-align: center;
   width: 100%;
   border-radius: 50%;
   margin-bottom: 2em;
-}
-
-.review__forsida{
-display: flex;
-flex-wrap: nowrap;
-align-items: center;
 }
