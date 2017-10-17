@@ -1,0 +1,40 @@
+footer{
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+//.footer{
+  //width: 100%;
+  //background-color: black;
+  //color: white;
+  //margin-top: 50px;
+  //margin-bottom: 50px;
+//}
+
+.footer_wrap{
+  display: flex;
+  padding-bottom: 30px;
+  border-bottom: 1px solid white;
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
+.footer_wrap .list{
+  width: 25%;
+  display: flex;
+}
+
+.footer_copyright {
+  display: flex;
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
+.footer_copyright .container{
+  padding-top: 50px;
+  padding-bottom: 10px;
+  display: flex;
+}
