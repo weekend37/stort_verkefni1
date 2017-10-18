@@ -1,7 +1,6 @@
 .upprodun{
   display: flex;
   flex-direction: row;
-  // flex-wrap: wrap;
   justify-content: stretch;
   margin-top: 8em;
 }
@@ -34,12 +33,6 @@
   margin-left: 10px;
 }
 
-// @media (max-width: 599px) {
-//   .image {
-//     width: 100%;
-//   }
-// }
-
 .profile{
   display: flex;
   flex-wrap: wrap;
@@ -55,8 +48,6 @@
   flex-wrap: wrap;
   flex-direction: column;
   width: 33%;
-  padding-left: 10px;
-  padding-right: 10px;
   justify-content: space-between;
   text-align: center;
   align-items: center;
