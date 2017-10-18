@@ -1,6 +1,5 @@
 .button {
   display: block;
-
   width: 100%;
   max-width: 5em;
   padding: 10px 5px;
@@ -14,24 +13,20 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
-
   background-color: #666;
   border: 1px solid #666;
   border-radius: 2px;
-
   margin-top: 2em;
-
 
   &:hover {
     color: #eee;
     background-color: #333;
-
     transition-timing-function: ease;
     transition-duration: 500ms;
   }
+
   &--valmynd {
     display: block;
-
     width: 100%;
     max-width: 5em;
     padding: 4px 8px 4px 8px;
@@ -40,7 +35,6 @@
     font-family: Lato, helvetica, arial, sans-serif;
     font-size: 1rem;
     color: #eee;
-
     border-radius: 4px;
     text-align: center;
     text-decoration: none;
@@ -50,22 +44,22 @@
   }
 
   &--bida {
-  width: 100%;
-  max-width: 8em;
-  margin-top: 1em;
-  margin-bottom: 1em;
+    width: 100%;
+    max-width: 8em;
+    margin-top: 1em;
+    margin-bottom: 1em;
   }
 
-&--forsida {
-  opacity: 0;
-  animation: 1s fadeIn ease-in;
-  animation-delay: 3s;
-  animation-fill-mode: forwards;
-}
+  &--forsida {
+    opacity: 0;
+    animation: 1s fadeIn ease-in;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+  }
 
-&--kaupa {
-  font-size: 1rem;
-  min-width: 250px;
-  margin-bottom: 100px;
-}
+  &--kaupa {
+    font-size: 1rem;
+    min-width: 250px;
+    margin-bottom: 100px;
+  }
 }
