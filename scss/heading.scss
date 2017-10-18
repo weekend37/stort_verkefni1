@@ -29,7 +29,7 @@
     animation-delay: 2s;
     animation-fill-mode: forwards;
 
-    @media(max-width: 400px){
+    @media(max-width: 450px){
       font-size: 3rem;
     }
   }
@@ -41,13 +41,13 @@
     animation-delay: 1s;
     animation-fill-mode: forwards;
 
-    @media(max-width: 400px){
+    @media(max-width: 450px){
       font-size: 1.5rem;
     }
   }
 
   &--three {
-    font-size: 21px;
+    font-size: 24px;
   }
 
   &--four {

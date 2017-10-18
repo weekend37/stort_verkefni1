@@ -1,6 +1,10 @@
 .text{
   margin-top: 0;
   margin-bottom: 40px;
+
+  &__forsida {
+    font-size: 18px;
+  }
 }
 .text--um{
   margin-top: 20px;
