@@ -1,22 +1,40 @@
 .quote {
   float: right;
-  width: 57%;
-  margin: 50px 10px 60px 30px;
+  width: 55%;
+  margin: 50px 10px 50px 30px;
   font-size: 1.5rem;
   font-style: italic;
   padding-left: 80px;
   padding-right: 30px;
 
-  @media(max-width: 400px){
-      float: right;
+  @media(max-width: 560px){
+      float: none;
       width: 100%;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-left: 0px;
+      margin-right: 0px;
+  }
+
+  @media(max-width: 680px) and (min-width: 561px){
+    width: 50%;
+    padding-left: 40px;
+    padding-right: 0px;
+  }
+
+  @media(max-width: 1130px) and (min-width: 870px){
+    margin-bottom: 100px;
+  }
+
+  @media(max-width: 869px) and (min-width: 830px){
+    margin-bottom: 130px;
   }
 }
 
 .quote .by{
-  font-size: 1rem;
+  font-size: 14px;
   font-style: normal;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 blockquote {
