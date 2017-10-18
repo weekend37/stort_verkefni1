@@ -62,5 +62,9 @@
     min-width: 250px;
     margin-bottom: 100px;
     margin-top: 0;
+
+    @media (max-width: 550px) {
+      margin-bottom: 20px;
+    }
   }
 }
