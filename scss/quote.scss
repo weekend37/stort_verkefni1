@@ -6,6 +6,11 @@
   font-style: italic;
   padding-left: 80px;
   padding-right: 30px;
+
+  @media(max-width: 400px){
+      float: right;
+      width: 100%;
+  }
 }
 
 .quote .by{
