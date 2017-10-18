@@ -15,19 +15,16 @@ html { /* stylelint-disable-line */
   margin: 0;
 }
 
-html { /* stylelint-disable-line */
-  // til þess að texti liggi ekki upp við brún á viewport þegar
-  // við erum < 1200px breiðum skjá, setjum margin á báða kanta html
-  // ruglar líka ekki í grid overlay
-  // margin-right: $gutter;
-  // margin-left: $gutter;
-
+html {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1.5;
+}
 
-  @media (min-width: $max-width) {
-    margin: 0;
+.main {
+  @media (max-width: 1239px) {
+    margin-left: $gutter;
+    margin-right: $gutter;
   }
 }
 
