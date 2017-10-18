@@ -41,13 +41,13 @@
   }
 
   &--four {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-style: italic;
-    padding-bottom: 2em;
+    padding-bottom: 1em;
   }
 
   &--five {
-    font-size: 1rem;
+    font-size: 21px;
     font-weight: bolder;
     padding-top: 5em;
     text-align: center;
@@ -65,4 +65,9 @@
   animation: 1s fadeIn ease-in;
   animation-delay: 3s;
   animation-fill-mode: forwards;
+}
+
+.nafn{
+font-size: 21px;
+font-weight: 600;
 }

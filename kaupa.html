@@ -5,32 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Kaupa</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab:400,700" rel="stylesheet">
-      <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="grid.css">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <header class="header header--kaupa">
+    <header class="header header--subpage">
       <div class="menu">
         <nav>
           <ul class="nav">
             <div class="left">
-            <li>
-              <a href="index.html" class="nav__link">Fooþjónustan</a>
-            </li>
-          </div>
+              <li>
+                <a href="index.html" class="nav__link">Fooþjónustan</a>
+              </li>
+            </div>
             <div class="right">
-            <li>
-              <a href="um.html" class="anchor__valmynd">Um</a>
-            </li>
-            <li>
-              <a href="kaupa.html" class="button button--valmynd">Kaupa</a>
-            </li>
-          </div>
+              <li>
+                <a href="um.html" class="anchor__valmynd">Um</a>
+              </li>
+              <li>
+                <a href="kaupa.html" class="button button--valmynd">Kaupa</a>
+              </li>
+            </div>
           </ul>
         </nav>
       </div>
-      <div class="mynd__subpage">
-        <h1 class="heading heading--one">Kaupa</h1>
+      <div class="mynd">
+        <h2 class="heading heading--forsidatwo">Í fyrsta skipti á Íslandi</h2>
+        <h1 class="heading heading--forsidaone">Fooþjónustan</h1>
+        <button class="button button--forsida">Kaupa</button>
       </div>
     </header>
     <main>
@@ -41,13 +43,11 @@
             <label class="item" for="name"> Nafn:</label>
             <input class="item" required type="text" id="name">
           </div>
-
           <div class="input">
             <label class="item" for="kennitala"> Kennitala:</label>
             <input class="item" required type="text" id="kennitala" pattern="[0-9]{6}-[0-9]{4}"
             required placeholder="123456-7890">
           </div>
-
           <div class="input input__gender">
             <label>Kyn:</label>
             <div class="item">
@@ -63,25 +63,20 @@
               <label class="inline-label" for="other">Annað</label>
             </div>
           </div>
-
           <div class="input">
             <label class="label" for="telephone"> Sími:</label>
             <input class="textbox" type="text" id="telephone" pattern="+[0-9]{3} [0-9]{3} [0-9]{4}"
             required placeholder="+354 812 3456">
           </div>
-
           <div class="input">
             <label class="item" for="address"> Heimilisfang:</label>
             <input class="item" type="text" id="address" required>
           </div>
-
           <div class="item">
             <input id="checkbox" type="checkbox" checked>
             <label class="inline-label" for="checkbox"> Skrá mig á póstlista</label>
           </div>
-
         </fieldset>
-
         <fieldset class="content-offset-7">
           <legend class="heading heading--form">Greiðsluupplýsingar</legend>
           <div class="input">
@@ -94,18 +89,15 @@
               </select>
             </div>
           </div>
-
           <div class="input">
             <label class="item" for="cardholder"> Nafn á korti:</label>
             <input class="item" required type="text" id="cardholder">
           </div>
-
           <div class="input">
             <label class="item" for="card-no"> Nafn á korti:</label>
             <input class="item" required type="text" id="card-no"
             pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" placeholder="5999-9999-9999-9999">
           </div>
-
           <div class="input">
             <label>Gildistími:</label>
             <div class="item item__expiry">
@@ -137,9 +129,7 @@
           </div>
         </fieldset>
       </section>
-
       <button class="button button--kaupa">Panta</button>
-
     </main>
     <footer>
       <div class="footer">
@@ -149,8 +139,7 @@
             <p>123-4567</p>
           </div>
           <div class="footerRight">
-            <p>Opið 12-13</p>
-            <p>alla daga</p>
+            <p>Opið 12-13 alla daga</p>
             <p>Bargata 1</p>
             <p>900 Foobar</p>
           </div>
