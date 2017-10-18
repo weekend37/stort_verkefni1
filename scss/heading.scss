@@ -13,6 +13,8 @@
   &--one {
     font-size: 4rem;
     font-weight: 700;
+    overflow-wrap: break-word;
+    padding-right: 40px;
   }
 
   &--two {
