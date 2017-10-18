@@ -41,6 +41,11 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     cursor: pointer;
+
+    @media (max-width: 400px) {
+      display: none;
+    }
+
   }
 
   &--bida {
