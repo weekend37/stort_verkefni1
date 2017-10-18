@@ -13,11 +13,13 @@
   &--one {
     font-size: 4rem;
     font-weight: 700;
+    overflow-wrap: break-word;
+    padding-right: 40px;
   }
 
   &--two {
     font-size: 2rem;
-    }
+  }
 
   &--forsidaone {
     font-size: 4rem;
@@ -60,14 +62,7 @@
 
 }
 
-.button--forsida {
-  opacity: 0;
-  animation: 1s fadeIn ease-in;
-  animation-delay: 3s;
-  animation-fill-mode: forwards;
-}
-
-.nafn{
-font-size: 21px;
-font-weight: 600;
-}
+  .nafn{
+  font-size: 21px;
+  font-weight: 600;
+  }
