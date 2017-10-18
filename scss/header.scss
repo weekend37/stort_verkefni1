@@ -16,9 +16,9 @@
 
   @media (max-width: 450px){
     height: 475px;
+    background-position: left;
   }
 }
-
 
 
 .mynd{
@@ -30,11 +30,16 @@
 }
 
 .header--subpage {
-  height: 500px;
+  height: 475px;
   background: transparent url(myndir/bg-subpage.jpg) no-repeat fixed 50% 50%;
   display: flex;
+  background-position: center;
   flex-wrap: wrap;
   background-size: cover;
+  @media (max-width: 450px){
+    background-size: auto;
+    background-position: left;
+  }
 }
 
 .mynd__subpage {
