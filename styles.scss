@@ -93,6 +93,10 @@ img { /* stylelint-disable-line */
 
 }
 
+body {
+  overflow-x: hidden;
+}
+
 main { /* stylelint-disable-line */
   max-width: $max-width;
   margin: 0 auto;

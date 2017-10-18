@@ -3,15 +3,23 @@
   flex-direction: row;
   justify-content: stretch;
   margin-top: 8em;
+
+  @media (max-width: 800px) {
+    display: block;
+  }
 }
 
 .commentakerfi{
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-right: 10px;
   width: 50%;
+
+  @media (max-width: 800px) {
+    width: 100%;
+  }
 }
 
 .comment{
@@ -31,6 +39,11 @@
   width: 50%;
   height: 50%;
   margin-left: 10px;
+
+  @media (max-width: 800px) {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .profile{
@@ -45,7 +58,6 @@
 
 .notandi{
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   width: 33%;
   justify-content: space-between;
