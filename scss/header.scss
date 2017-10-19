@@ -1,60 +1,57 @@
 .header {
+  display: flex;
   width: 100%;
-  margin-bottom: 2em;
-  display: flex;
   margin: 0 auto;
-}
+  margin-bottom: 2em;
 
-.header--forsida {
-  height: 900px;
-  background: transparent url(myndir/bg.jpg) no-repeat fixed 50% 50%;
-  background-size: cover;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  &--forsida {
+    display: flex;
+    height: 900px;
+    background: transparent url("myndir/bg.jpg") no-repeat fixed 50% 50%;
+    background-size: cover;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 
-  @media (max-width: 450px){
-    height: 475px;
-    background-position: left;
+    @media (max-width: 450px) {
+      height: 475px;
+      background-position: left;
+    }
   }
 }
 
-
-.mynd{
+.mynd {
   display: flex;
   width: 100%;
   margin: 0 auto;
-  flex-direction: column;
   text-align: center;
+  flex-direction: column;
+
+  &__subpage {
+    display: flex;
+    max-width: 1200px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    flex-direction: row;
+
+    @media (max-width: 1240px) {
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+  }
 }
 
 .header--subpage {
-  height: 475px;
-  background: transparent url(myndir/bg-subpage.jpg) no-repeat fixed 50% 50%;
   display: flex;
+  height: 475px;
+  background: transparent url("myndir/bg-subpage.jpg") no-repeat fixed 50% 50%;
   background-position: center;
   flex-wrap: wrap;
   background-size: cover;
-  @media (max-width: 450px){
-    background-size: auto;
+  @media (max-width: 450px) {
     background-position: left;
-  }
-}
-
-.mynd__subpage {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  text-align: left;
-  color: #fff;
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-
-  @media (max-width: 1240px) {
-    margin-left: 20px;
-    margin-right: 20px;
+    background-size: auto;
   }
 }
