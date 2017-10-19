@@ -19,6 +19,19 @@
       background-position: left;
     }
   }
+
+  &--subpage {
+    display: flex;
+    height: 475px;
+    background: transparent url("myndir/bg-subpage.jpg") no-repeat fixed 50% 50%;
+    background-position: center;
+    flex-wrap: wrap;
+    background-size: cover;
+    @media (max-width: 450px) {
+      background-position: left;
+      background-size: auto;
+    }
+  }
 }
 
 .mynd {
@@ -41,18 +54,5 @@
       margin-right: 20px;
       margin-left: 20px;
     }
-  }
-}
-
-.header--subpage {
-  display: flex;
-  height: 475px;
-  background: transparent url("myndir/bg-subpage.jpg") no-repeat fixed 50% 50%;
-  background-position: center;
-  flex-wrap: wrap;
-  background-size: cover;
-  @media (max-width: 450px) {
-    background-position: left;
-    background-size: auto;
   }
 }
