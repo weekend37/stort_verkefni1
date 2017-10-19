@@ -1,38 +1,38 @@
-.upprodun{
+.upprodun {
   display: flex;
+  margin-top: 120px;
   flex-direction: row;
   justify-content: stretch;
-  margin-top: 120px;
 
   @media (max-width: 800px) {
     display: block;
   }
 }
 
-.commentakerfi{
+.commentakerfi {
   display: flex;
+  width: 50%;
+  margin-right: 10px;
   flex-direction: column;
   align-items: stretch;
   justify-content: space-around;
-  margin-right: 10px;
-  width: 50%;
 
   @media (max-width: 800px) {
     width: 100%;
   }
 }
 
-.comment{
+.comment {
   display: flex;
-  flex-direction: row;
   padding-right: 10px;
+  flex-direction: row;
 
   @media (max-width: 800px) {
     padding: 0;
   }
 }
 
-.img_check{
+.img_check {
   width: 40px;
   height: 30px;
   padding-right: 5px;
@@ -52,11 +52,11 @@
   }
 }
 
-.profile{
+.profile {
   display: flex;
+  margin-top: 100px;
   flex-wrap: wrap;
   flex-direction: row;
-  margin-top: 100px;
   align-items: stretch;
   justify-content: space-between;
 
@@ -65,12 +65,12 @@
   }
 }
 
-.notandi{
+.notandi {
   display: flex;
-  flex-direction: column;
   width: 33%;
-  justify-content: space-between;
   text-align: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 
   @media (max-width: 900px) {
@@ -80,8 +80,8 @@
 
   @media (max-width: 599px) {
     width: 100%;
-    margin-top: 80px;
     padding: 0;
+    margin-top: 80px;
   }
 
   &__wrap {
@@ -92,11 +92,11 @@
   }
 }
 
-.img_profile{
+.img_profile {
   display: flex;
   width: 75%;
-  border-radius: 50%;
   margin-bottom: 2em;
+  border-radius: 50%;
 
   @media (max-width: 900px) {
     width: 100%;
