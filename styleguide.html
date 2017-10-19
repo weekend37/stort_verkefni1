@@ -6,7 +6,7 @@
     <title>Stórt verkefni 1 - Styleguide</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab:400,700" rel="stylesheet">
     <!-- <link rel="stylesheet" href="grid.css"> -->
-    <link rel="stylesheet" href="styles.css">;
+    <link rel="stylesheet" href="styles.css">
 
     <script type="text/javascript">
         function toggle_visibility(id) {
@@ -29,7 +29,6 @@
 
   </head>
 <body>
-  <main>
   <style type="text/css">
 #contents{
 display:none;
@@ -38,10 +37,13 @@ margin:10px;
 border:1px solid #ccc;
 }
 </style>
-
 <style>
     .kodascript{
       text-decoration: underline;
+    }
+
+    .styleguide__quote{
+      margin-bottom: 12em;
     }
 
     .kodi {
@@ -75,10 +77,11 @@ border:1px solid #ccc;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      align-items: flex-start;
+      align-items: baseline;
     }
 
     </style>
+    <main class="main">
 
   <h1>Styleguide fyrir fyrsta stóra verkefnið í Vefforritun.</h2>
     <br>
@@ -99,110 +102,11 @@ border:1px solid #ccc;
 <h5 class=heading--forsidatwo>Almenn fyrirsögn tvö fyrir forsíðu</h5>
 <h5 class=heading--form>Almenn fyrirsögn fyrir form</h5>
 
-<p class="kodascript" href="javascript:void(0);" onClick="changeText(1); toggle_visibility('contents');" title="Show" id="show">Sýna kóða</>
-<div id="contents" class="kodi">
-<pre>
-  <code>
-    .text{
-      margin-top: 0;
-      margin-bottom: 40px;
-
-      &__forsida {
-        font-size: 18px;
-      }
-    }
-    .text--um{
-      margin-top: 20px;
-      margin-bottom: 0px;
-    }
-
-    .heading {
-
-      width: 100%;
-      padding: 0;
-      font-family: 'Roboto Slab', serif;
-      font-size: 2rem;
-
-      @-webkit-keyframes fadeIn {
-        0%   { opacity: 0; }
-        100% { opacity: 1; }
-      }
-
-      &--one {
-        font-size: 4rem;
-        font-weight: 700;
-        overflow-wrap: break-word;
-        padding-right: 40px;
-      }
-
-      &--two {
-        font-size: 2rem;
-      }
-
-      &--forsidaone {
-        font-size: 4rem;
-        font-weight: 700;
-        opacity: 0;
-        animation: 1s fadeIn ease-in;
-        animation-delay: 2s;
-        animation-fill-mode: forwards;
-
-        @media(max-width: 450px){
-          font-size: 3rem;
-        }
-      }
-
-      &--forsidatwo {
-        font-size: 2rem;
-        opacity: 0;
-        animation: 1s fadeIn ease-in;
-        animation-delay: 1s;
-        animation-fill-mode: forwards;
-
-        @media(max-width: 450px){
-          font-size: 1.5rem;
-        }
-      }
-
-      &--three {
-        font-size: 24px;
-      }
-
-      &--four {
-        font-size: 1.5rem;
-        font-style: italic;
-        padding-bottom: 1em;
-      }
-
-      &--five {
-        font-size: 21px;
-        font-weight: bolder;
-        padding-top: 5em;
-        text-align: center;
-      }
-
-      &--form {
-        font-size: 1.5rem;
-        padding-bottom: 20px;
-      }
-
-    }
-
-      .nafn{
-      font-size: 21px;
-      font-weight: 600;
-      }
-
-
-  </code>
-</pre>
-</div>
-
 <h1 class="heading__styleguide">Takkar:</h1>
 
 <div class="takkar__styleguide">
 <p class="button"> Takki</p>
-<p class="button button--valmynd"> Menu</p>
+<p class="button button--valmynd"> Valmynd</p>
 <p class="button button--bida"> Bíða</p>
 <p class="button button--forsida"> Forsíða</p>
 <p class="button button--kaupa"> Kaupa</p>
@@ -241,8 +145,8 @@ border:1px solid #ccc;
 
 <main class="main">
   <section class="form">
-    <fieldset class="content-offset-1">
-      <legend class="heading heading--form">Form fyrir nafn og persónuupplýsingar</legend>
+    <fieldset class="content content--offset-1">
+      <legend class="heading heading--form">Persónuupplýsingar</legend>
       <div class="input">
         <label class="item" for="name"> Nafn:</label>
         <input class="item" required type="text" id="name">
@@ -282,8 +186,8 @@ border:1px solid #ccc;
       </div>
     </fieldset>
 
-    <fieldset class="content-offset-7">
-      <legend class="heading heading--form">Form fyrir greiðsluupplýsingar</legend>
+    <fieldset class="content content--offset-7">
+      <legend class="heading heading--form">Greiðsluupplýsingar</legend>
       <div class="input">
         <label for="fop"> Greiða með:</label>
         <div class="item">
@@ -335,8 +239,7 @@ border:1px solid #ccc;
     </fieldset>
   </section>
 
-  <button class="button button--kaupa">Kaupa</button>
-  </main>
+  <button class="button button--kaupa">Panta</button>
 
 <h1 class="heading__styleguide">Footer</h1>
 
@@ -362,7 +265,8 @@ border:1px solid #ccc;
 
 <h1 class="heading__styleguide">Tilvísanir</h1>
 
-<div class="quote">
+<div class="styleguide__quote">
+<div class="quote" class="styleguide__quote">
   <blockquote>
     <p>
       „Þessi vefsíða er líklega sú fallegasta sem ég hef séð!“<br>
@@ -371,6 +275,512 @@ border:1px solid #ccc;
   <p class="by">
     — Bill Gates<br>
   </p>
+</div>
+</div>
+
+<h1 class="heading__styleguide">Kóði</h1>
+
+<p class="kodascript" href="javascript:void(0);" onClick="changeText(1); toggle_visibility('contents');" title="Show" id="show">Sýna kóða</>
+<div id="contents" class="kodi">
+<pre>
+  <code>
+
+    //Texti
+
+    .text{
+      margin-top: 0;
+      margin-bottom: 40px;
+
+      &__forsida {
+        font-size: 18px;
+      }
+    }
+    .text--um{
+      margin-top: 20px;
+      margin-bottom: 0px;
+    }
+
+    .heading {
+      width: 100%;
+      padding: 0;
+      font-family: "Roboto Slab", serif;
+      font-size: 2rem;
+
+      @-webkit-keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+
+      &--one {
+        padding-right: 40px;
+        overflow-wrap: break-word;
+        font-size: 4rem;
+        font-weight: 700;
+      }
+
+      &--two {
+        font-size: 2rem;
+      }
+
+      &--forsidaone {
+        font-size: 4rem;
+        font-weight: 700;
+        opacity: 0;
+        animation: 1s fadeIn ease-in;
+        animation-fill-mode: forwards;
+        animation-delay: 2s;
+
+        @media (max-width: 450px) {
+          font-size: 3rem;
+        }
+      }
+
+      &--forsidatwo {
+        font-size: 2rem;
+        opacity: 0;
+        animation: 1s fadeIn ease-in;
+        animation-fill-mode: forwards;
+        animation-delay: 1s;
+
+        @media (max-width: 450px) {
+          font-size: 1.5rem;
+        }
+      }
+
+      &--three {
+        font-size: 24px;
+      }
+
+      &--four {
+        padding-bottom: 1em;
+        font-size: 1.5rem;
+        font-style: italic;
+      }
+
+      &--five {
+        padding-top: 5em;
+        font-size: 21px;
+        font-weight: bolder;
+        text-align: center;
+
+        @media (max-width: 599px) {
+          padding-top: 40px;
+        }
+      }
+
+      &--form {
+        padding-bottom: 20px;
+        font-size: 1.5rem;
+      }
+
+    }
+
+    .nafn {
+      font-size: 21px;
+      font-weight: 600;
+    }
+
+    //Takkar
+
+    .button {
+      display: block;
+      width: 100%;
+      max-width: 5em;
+      padding: 10px 5px;
+      margin: auto;
+      margin-top: 2em;
+      overflow: hidden;
+      font-family: "Open Sans", helvetica, arial, sans-serif;
+      font-size: 1.5rem;
+      color: #eee;
+      text-align: center;
+      text-decoration: none;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      cursor: pointer;
+      background-color: #666;
+      border: 1px solid #666;
+      border-radius: 4px;
+
+      &:hover {
+        color: #eee;
+        background-color: #333;
+        transition-timing-function: ease;
+        transition-duration: 500ms;
+      }
+
+      &--valmynd {
+        padding: 4px 8px;
+        margin-top: 0;
+        font-size: 1rem;
+
+        @media (max-width: 400px) {
+          display: none;
+        }
+      }
+
+      &--bida {
+        max-width: 8em;
+        margin-top: 0.5em;
+        margin-bottom: 1em;
+        font-size: 2rem;
+      }
+
+      &--forsida {
+        opacity: 0;
+        animation: 1s fadeIn ease-in;
+        animation-fill-mode: forwards;
+        animation-delay: 3s;
+      }
+
+      &--kaupa {
+        min-width: 250px;
+        margin-top: 0;
+        margin-bottom: 100px;
+        font-size: 1rem;
+
+        @media (max-width: 550px) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    //Valmynd og header
+
+    nav { /* stylelint-disable-line */
+      display: flex;
+      align-items: center;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .nav {
+      display: flex;
+      width: 100%;
+      max-width: 1200px;
+      padding: 10px 0;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 0 auto;
+      list-style: none;
+
+      @media (max-width: 1239px) {
+        margin-right: 20px;
+        margin-left: 20px;
+      }
+    }
+
+    .menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 50px;
+      background: rgba(0, 0, 0, 0.8);
+    }
+
+    .left {
+      display: flex;
+      font-weight: bolder;
+      flex-wrap: nowrap;
+      flex-direction: row;
+    }
+
+    .right {
+      display: inline-flex;
+      font-family: "Open Sans", sans-serif;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .nav__link {
+      padding: 0;
+      font-size: 24px;
+    }
+
+
+    a { /* stylelint-disable-line */
+      padding: 10px;
+      font-family: "Roboto Slab", serif;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .anchor__valmynd {
+      font-family: "Open Sans", sans-serif;
+    }
+
+    .header {
+      display: flex;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 2em;
+      opacity: 0.8;
+
+      &--forsida {
+        display: flex;
+        height: 900px;
+        background: transparent url("myndir/bg.jpg") no-repeat fixed 50% 50%;
+        background-size: cover;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        @media (max-width: 450px) {
+          height: 475px;
+          background-position: left;
+        }
+      }
+
+      &--subpage {
+        display: flex;
+        height: 475px;
+        background: transparent url("myndir/bg-subpage.jpg") no-repeat fixed 50% 50%;
+        background-position: center;
+        flex-wrap: wrap;
+        background-size: cover;
+        @media (max-width: 450px) {
+          background-position: left;
+          background-size: auto;
+        }
+      }
+    }
+
+    .mynd {
+      display: flex;
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      flex-direction: column;
+
+      &__subpage {
+        display: flex;
+        max-width: 1200px;
+        color: #fff;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        flex-direction: row;
+
+        @media (max-width: 1240px) {
+          margin-right: 20px;
+          margin-left: 20px;
+        }
+      }
+    }
+
+    //Form
+
+    $gutter: 20px;
+
+    .form {
+      display: flex;
+      margin-top: 80px;
+
+      @media (max-width: 550px) {
+        display: block;
+        margin-top: $gutter*2;
+      }
+    }
+
+    .content {
+      display: flex;
+      width: 32.3%;
+      border: 0;
+
+      &--offset-1 {
+        margin-right: $gutter;
+        margin-bottom: $gutter*2;
+        margin-left: 8.3%;
+        flex-direction: column;
+
+        @media (max-width: 999px) {
+          width: 50%;
+          margin-right: $gutter/2;
+          margin-left: 0;
+        }
+
+        @media (max-width: 550px) {
+          width: 100%;
+          margin-right: 0;
+        }
+      }
+
+      &--offset-7 {
+        display: flex;
+        width: 32.3%;
+        margin-left: 17%;
+        flex-direction: column;
+        border: 0;
+
+        @media (max-width: 999px) {
+          width: 50%;
+          margin-right: 0;
+          margin-left: $gutter/2;
+        }
+
+        @media (max-width: 550px) {
+          width: 100%;
+          margin-bottom: $gutter*2;
+          margin-left: 0;
+        }
+      }
+    }
+
+    .input {
+      display: flex;
+      padding-bottom: 20px;
+      flex-direction: column;
+
+      &__gender {
+        justify-content: space-between;
+        height: 150px;
+        margin-left: 5px;
+      }
+    }
+
+    .item {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      &__expiry {
+        justify-content: space-between;
+      }
+    }
+
+    .inline-label {
+      padding-left: 20px;
+    }
+
+    input { /* stylelint-disable-line */
+      padding: 3px 0 3px 4px;
+      font-size: 1rem;
+      border: 1px solid rgba(0, 0, 0, 0.3);
+      border-style: solid;
+      border-radius: 5px;
+    }
+
+    .label {
+      display: flex;
+    }
+
+    .dropselect {
+      display: flex;
+      width: 100%;
+      font-size: 1rem;
+      justify-content: space-between;
+
+      &--expiry {
+        width: 30%;
+      }
+    }
+
+    //Footer
+
+    footer { /*stylelint-disable-line*/
+      width: 100%;
+      margin-top: 1em;
+      background: #000;
+      opacity: 0.8;
+    }
+
+    .footerUpper {
+      display: flex;
+      max-width: 1200px;
+      margin: auto;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .footerLeft {
+      display: flex;
+      padding: 1em 3em;
+      color: #fff;
+      text-align: center;
+      flex-direction: column;
+    }
+
+    .footerRight {
+      display: flex;
+      padding: 1em 3em;
+      overflow-wrap: break-word;
+      color: #fff;
+      text-align: center;
+      flex-direction: column;
+    }
+
+    .footerUnder {
+      display: flex;
+      justify-content: center;
+      padding: 1em;
+      padding-bottom: none;
+      color: #fff;
+      border-top: 1px solid rgb(255, 255, 255);
+      opacity: 0.4;
+    }
+
+    @media (max-width: 600px) {
+      .footerLeft {
+        padding: 1em;
+      }
+
+      .footerRight {
+        padding: 1em;
+      }
+    }
+
+    //Tilvísanir
+
+    .quote {
+      float: right;
+      width: 55%;
+      padding-right: 30px;
+      padding-left: 80px;
+      margin: 50px 10px 50px 30px;
+      font-size: 1.5rem;
+      font-style: italic;
+
+      @media (max-width: 560px) {
+        float: none;
+        width: 100%;
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-right: 0;
+        margin-left: 0;
+      }
+
+      @media (max-width: 680px) and (min-width: 561px) {
+        width: 50%;
+        padding-right: 0;
+        padding-left: 40px;
+      }
+
+      @media (max-width: 1130px) and (min-width: 870px) {
+        margin-bottom: 100px;
+      }
+
+      @media (max-width: 869px) and (min-width: 830px) {
+        margin-bottom: 130px;
+      }
+    }
+
+    .paragraph-quote {
+      margin: 0; /* gets rid of the default blockquote margin */
+    }
+
+    .by {
+      margin-top: 20px;
+      font-size: 14px;
+      font-style: normal;
+    }
+
+
+  </code>
+</pre>
 </div>
 
 </main>
