@@ -1,0 +1,378 @@
+<!doctype html>
+<html class="grid" lang="is">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Stórt verkefni 1 - Styleguide</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab:400,700" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="grid.css"> -->
+    <link rel="stylesheet" href="styles.css">;
+
+    <script type="text/javascript">
+        function toggle_visibility(id) {
+            var e = document.getElementById(id);
+            if(e.style.display == 'block')
+                e.style.display = 'none';
+            else
+                e.style.display = 'block';
+        }
+        function changeText(idElement) {
+            var element = document.getElementById('show');
+            if (idElement === 1) {
+                if (element.innerHTML === 'Fela kóða') element.innerHTML = 'Sýna kóða';
+                else {
+                    element.innerHTML = 'Fela kóða';
+                }
+            }
+        }
+    </script>
+
+  </head>
+<body>
+  <main>
+  <style type="text/css">
+#contents{
+display:none;
+padding:10px;
+margin:10px;
+border:1px solid #ccc;
+}
+</style>
+
+<style>
+    .kodascript{
+      text-decoration: underline;
+    }
+
+    .kodi {
+      background-color: #eee;
+      border: 1px solid #999;
+      display: block;
+      padding: 20px;
+    }
+    .heading__styleguide{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-size: 24px;
+    font-weight: bolder;
+    border-bottom: 1px solid #999;
+    }
+
+    .menu__styleguide {
+      display: block;
+      flex-wrap: wrap;
+      position: static;
+      margin-top: -17.2em;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 50px;
+      background: #000;
+      opacity: 0.8; // var takkinn alltaf gegnsær líka???
+    }
+
+    .takkar__styleguide{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    </style>
+
+  <h1>Styleguide fyrir fyrsta stóra verkefnið í Vefforritun.</h2>
+    <br>
+    <h1 class="heading__styleguide">Texti:</h1>
+<p>Almennur HTML texti</p>
+<p class="text">Almennur texti stílaður með .text</p>
+<p class="text__forsida">Almennur texti fyrir forsíðuna</p>
+<p class="text__um">Almennur texti fyrir um-síðuna</p>
+<p class="nafn">Almennur texti fyrir nöfn</p>
+
+<h1>Almenn fyrirsögn</p>
+<h1 class=heading--one>Almenn fyrirsögn eitt</h1>
+<h2 class=heading--two>Almenn fyrirsögn tvö</h2>
+<h3 class=heading--three>Almenn fyrirsögn þrjú</h3>
+<h4 class=heading--four>Almenn fyrirsögn fjögur</h4>
+<h5 class=heading--five>Almenn fyrirsögn fimm</h5>
+<h5 class=heading--forsidaone>Almenn fyrirsögn eitt fyrir forsíðu</h5>
+<h5 class=heading--forsidatwo>Almenn fyrirsögn tvö fyrir forsíðu</h5>
+<h5 class=heading--form>Almenn fyrirsögn fyrir form</h5>
+
+<p class="kodascript" href="javascript:void(0);" onClick="changeText(1); toggle_visibility('contents');" title="Show" id="show">Sýna kóða</>
+<div id="contents" class="kodi">
+<pre>
+  <code>
+    .text{
+      margin-top: 0;
+      margin-bottom: 40px;
+
+      &__forsida {
+        font-size: 18px;
+      }
+    }
+    .text--um{
+      margin-top: 20px;
+      margin-bottom: 0px;
+    }
+
+    .heading {
+
+      width: 100%;
+      padding: 0;
+      font-family: 'Roboto Slab', serif;
+      font-size: 2rem;
+
+      @-webkit-keyframes fadeIn {
+        0%   { opacity: 0; }
+        100% { opacity: 1; }
+      }
+
+      &--one {
+        font-size: 4rem;
+        font-weight: 700;
+        overflow-wrap: break-word;
+        padding-right: 40px;
+      }
+
+      &--two {
+        font-size: 2rem;
+      }
+
+      &--forsidaone {
+        font-size: 4rem;
+        font-weight: 700;
+        opacity: 0;
+        animation: 1s fadeIn ease-in;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+
+        @media(max-width: 450px){
+          font-size: 3rem;
+        }
+      }
+
+      &--forsidatwo {
+        font-size: 2rem;
+        opacity: 0;
+        animation: 1s fadeIn ease-in;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+
+        @media(max-width: 450px){
+          font-size: 1.5rem;
+        }
+      }
+
+      &--three {
+        font-size: 24px;
+      }
+
+      &--four {
+        font-size: 1.5rem;
+        font-style: italic;
+        padding-bottom: 1em;
+      }
+
+      &--five {
+        font-size: 21px;
+        font-weight: bolder;
+        padding-top: 5em;
+        text-align: center;
+      }
+
+      &--form {
+        font-size: 1.5rem;
+        padding-bottom: 20px;
+      }
+
+    }
+
+      .nafn{
+      font-size: 21px;
+      font-weight: 600;
+      }
+
+
+  </code>
+</pre>
+</div>
+
+<h1 class="heading__styleguide">Takkar:</h1>
+
+<div class="takkar__styleguide">
+<p class="button"> Takki</p>
+<p class="button button--valmynd"> Menu</p>
+<p class="button button--bida"> Bíða</p>
+<p class="button button--forsida"> Forsíða</p>
+<p class="button button--kaupa"> Kaupa</p>
+</div>
+
+<h1 class="heading__styleguide">Valmynd og header:</h1>
+<body>
+  <header class="header header--forsida">
+    <div class="menu__styleguide">
+      <nav>
+        <ul class="nav">
+          <div class="left">
+            <li>
+              <a href="index.html" class="nav__link">Valmynd á forsíðu</a>
+            </li>
+          </div>
+          <div class="right">
+            <li>
+              <a href="um.html" class="anchor__valmynd">Undirsíða</a>
+            </li>
+            <li>
+              <a href="kaupa.html" class="button button--valmynd">Valmynd</a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </div>
+    <div class="mynd">
+      <h2 class="heading heading--forsidatwo">Þetta er fyrirsögn á forsíðu</h2>
+      <h1 class="heading heading--forsidaone">Forsíðufyrirsögn!</h1>
+      <a href="kaupa.html" class="button button--forsida">Takki</a>
+    </div>
+  </header>
+
+<h1 class="heading__styleguide">Form:</h1>
+
+<main class="main">
+  <section class="form">
+    <fieldset class="content-offset-1">
+      <legend class="heading heading--form">Form fyrir nafn og persónuupplýsingar</legend>
+      <div class="input">
+        <label class="item" for="name"> Nafn:</label>
+        <input class="item" required type="text" id="name">
+      </div>
+      <div class="input">
+        <label class="item" for="kennitala"> Kennitala:</label>
+        <input class="item" required type="text" id="kennitala" pattern="[0-9]{6}-[0-9]{4}"
+        required placeholder="123456-7890">
+      </div>
+      <div class="input input__gender">
+        <label>Kyn:</label>
+        <div class="item">
+          <input class="radio" name="gender" type="radio" id="female" required>
+          <label class="inline-label" for="female">Kona</label>
+        </div>
+        <div class="item">
+          <input class="radio" name="gender" type="radio" id="male">
+          <label class="inline-label" for="male">Karl</label>
+        </div>
+        <div class="item">
+          <input class="radio" name="gender" type="radio" id="other">
+          <label class="inline-label" for="other">Annað</label>
+        </div>
+      </div>
+      <div class="input">
+        <label class="label" for="telephone"> Sími:</label>
+        <input class="textbox" type="text" id="telephone" pattern="+[0-9]{3} [0-9]{3} [0-9]{4}"
+        required placeholder="+354 812 3456">
+      </div>
+      <div class="input">
+        <label class="item" for="address"> Heimilisfang:</label>
+        <input class="item" type="text" id="address" required>
+      </div>
+      <div class="item">
+        <input id="checkbox" type="checkbox" checked>
+        <label class="inline-label" for="checkbox"> Skrá mig á póstlista</label>
+      </div>
+    </fieldset>
+
+    <fieldset class="content-offset-7">
+      <legend class="heading heading--form">Form fyrir greiðsluupplýsingar</legend>
+      <div class="input">
+        <label for="fop"> Greiða með:</label>
+        <div class="item">
+          <select class="dropselect" id="fop" required>
+            <option value="card">Kreditkorti</option>
+            <option value="wire">Millifærslu</option>
+            <option value="cash">Reiðufé</option>
+          </select>
+        </div>
+      </div>
+      <div class="input">
+        <label class="item" for="cardholder"> Nafn á korti:</label>
+        <input class="item" required type="text" id="cardholder">
+      </div>
+      <div class="input">
+        <label class="item" for="card-no"> Nafn á korti:</label>
+        <input class="item" required type="text" id="card-no"
+        pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" placeholder="5999-9999-9999-9999">
+      </div>
+      <div class="input">
+        <label>Gildistími:</label>
+        <div class="item item__expiry">
+          <div class="dropselect">
+            <label class="label" for="month"> Mán</label>
+            <select class="dropselect dropselect--expiry" id="month" required>
+              <option value="01">01</option>
+              <option value="02">02</option>
+              <option value="03">03</option>
+              <option value="04">04</option>
+              <option value="05">05</option>
+              <option value="06">06</option>
+              <option value="07">07</option>
+              <option value="08">08</option>
+              <option value="09">09</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+            </select>
+            <label class="label" for="year"> Ár</label>
+            <select class="dropselect dropselect--expiry" id="year" required>
+              <option value="2017">2017</option>
+              <option value="2018">2018</option>
+              <option value="2019">2019</option>
+              <option value="2020">2020</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+  </section>
+
+  <button class="button button--kaupa">Kaupa</button>
+  </main>
+
+<h1 class="heading__styleguide">Footer</h1>
+
+<footer>
+  <div class="footer">
+    <div class="footerUpper">
+      <div class="footerLeft">
+        <p>Upplýsingar</p>
+        <p>58-12345</p>
+      </div>
+      <div class="footerRight">
+        <p>Opnunartími</p>
+        <p>Heimilisfang</p>
+        <p>Staður</p>
+      </div>
+    </div>
+    <div class="border"></div>
+    <div class="footerUnder">
+      <p>@ Vefforritunarmeistarar 2017</p>
+    </div>
+  </div>
+</footer>
+
+<h1 class="heading__styleguide">Tilvísanir</h1>
+
+<div class="quote">
+  <blockquote>
+    <p>
+      „Þessi vefsíða er líklega sú fallegasta sem ég hef séð!“<br>
+    </p>
+  </blockquote>
+  <p class="by">
+    — Bill Gates<br>
+  </p>
+</div>
+
+</main>
+</body>
+</html>
