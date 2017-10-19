@@ -4,8 +4,9 @@
   max-width: 5em;
   padding: 10px 5px;
   margin: auto;
+  margin-top: 2em;
   overflow: hidden;
-  font-family: Open Sans, helvetica, arial, sans-serif;
+  font-family: "Open Sans", helvetica, arial, sans-serif;
   font-size: 1.5rem;
   color: #eee;
   text-align: center;
@@ -16,7 +17,6 @@
   background-color: #666;
   border: 1px solid #666;
   border-radius: 4px;
-  margin-top: 2em;
 
   &:hover {
     color: #eee;
@@ -26,30 +26,15 @@
   }
 
   &--valmynd {
-    display: block;
-    width: 100%;
-    max-width: 5em;
-    padding: 4px 8px 4px 8px;
-    margin: auto;
-    overflow: hidden;
-    font-family: Open Sans, helvetica, arial, sans-serif;
+    padding: 4px 8px;
     font-size: 1rem;
-    color: #eee;
-    border-radius: 4px;
-    text-align: center;
-    text-decoration: none;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    cursor: pointer;
 
     @media (max-width: 400px) {
       display: none;
     }
-
   }
 
   &--bida {
-    width: 100%;
     max-width: 8em;
     margin-top: 0.5em;
     margin-bottom: 1em;
@@ -59,15 +44,15 @@
   &--forsida {
     opacity: 0;
     animation: 1s fadeIn ease-in;
-    animation-delay: 3s;
     animation-fill-mode: forwards;
+    animation-delay: 3s;
   }
 
   &--kaupa {
-    font-size: 1rem;
     min-width: 250px;
-    margin-bottom: 100px;
     margin-top: 0;
+    margin-bottom: 100px;
+    font-size: 1rem;
 
     @media (max-width: 550px) {
       margin-bottom: 20px;
