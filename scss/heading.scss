@@ -1,20 +1,19 @@
 .heading {
-
   width: 100%;
   padding: 0;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   font-size: 2rem;
 
   @-webkit-keyframes fadeIn {
-    0%   { opacity: 0; }
+    0% { opacity: 0; }
     100% { opacity: 1; }
   }
 
   &--one {
+    padding-right: 40px;
+    overflow-wrap: break-word;
     font-size: 4rem;
     font-weight: 700;
-    overflow-wrap: break-word;
-    padding-right: 40px;
   }
 
   &--two {
@@ -26,10 +25,10 @@
     font-weight: 700;
     opacity: 0;
     animation: 1s fadeIn ease-in;
-    animation-delay: 2s;
     animation-fill-mode: forwards;
+    animation-delay: 2s;
 
-    @media(max-width: 450px){
+    @media (max-width: 450px) {
       font-size: 3rem;
     }
   }
@@ -38,10 +37,10 @@
     font-size: 2rem;
     opacity: 0;
     animation: 1s fadeIn ease-in;
-    animation-delay: 1s;
     animation-fill-mode: forwards;
+    animation-delay: 1s;
 
-    @media(max-width: 450px){
+    @media (max-width: 450px) {
       font-size: 1.5rem;
     }
   }
@@ -51,26 +50,26 @@
   }
 
   &--four {
+    padding-bottom: 1em;
     font-size: 1.5rem;
     font-style: italic;
-    padding-bottom: 1em;
   }
 
   &--five {
+    padding-top: 5em;
     font-size: 21px;
     font-weight: bolder;
-    padding-top: 5em;
     text-align: center;
   }
 
   &--form {
-    font-size: 1.5rem;
     padding-bottom: 20px;
+    font-size: 1.5rem;
   }
 
 }
 
-  .nafn{
+.nafn {
   font-size: 21px;
   font-weight: 600;
-  }
+}
