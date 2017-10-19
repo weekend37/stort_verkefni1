@@ -5,784 +5,741 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Stórt verkefni 1 - Styleguide</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab:400,700" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="grid.css"> -->
+    <link rel="stylesheet" href="styleguide.css">
     <link rel="stylesheet" href="styles.css">
 
     <script type="text/javascript">
-        function toggle_visibility(id) {
-            var e = document.getElementById(id);
-            if(e.style.display == 'block')
-                e.style.display = 'none';
-            else
-                e.style.display = 'block';
+      function toggle_visibility(id) {
+        var e = document.getElementById(id);
+        if(e.style.display == 'block')
+          e.style.display = 'none';
+        else
+          e.style.display = 'block';
+      }
+      function changeText(idElement) {
+        var element = document.getElementById('show');
+        if (idElement === 1) {
+          if (element.innerHTML === 'Fela kóða') {
+            element.innerHTML = 'Sýna kóða';
+          }
+          else {
+            element.innerHTML = 'Fela kóða';
+          }
         }
-        function changeText(idElement) {
-            var element = document.getElementById('show');
-            if (idElement === 1) {
-                if (element.innerHTML === 'Fela kóða') element.innerHTML = 'Sýna kóða';
-                else {
-                    element.innerHTML = 'Fela kóða';
-                }
-            }
-        }
+      }
     </script>
-
   </head>
-<body>
-  <style type="text/css">
-#contents{
-display:none;
-padding:10px;
-margin:10px;
-border:1px solid #ccc;
-}
-</style>
-<style>
-    .kodascript{
-      text-decoration: underline;
-    }
 
-    .styleguide__quote{
-      margin-bottom: 12em;
-    }
-
-    .kodi {
-      background-color: #eee;
-      border: 1px solid #999;
-      display: block;
-      padding: 20px;
-    }
-    .heading__styleguide{
-    margin-top: 2em;
-    margin-bottom: 2em;
-    font-size: 24px;
-    font-weight: bolder;
-    border-bottom: 1px solid #999;
-    }
-
-    .menu__styleguide {
-      margin-top: -17.2em;
-      position: relative;
-      top: 0;
-      left: 0;
-      z-index: 1000;
-      display: flex;
-      flex-wrap: wrap;
-      width: 100%;
-      height: 50px;
-      background: rgba(0, 0, 0, 0.8);
-    }
-
-    .takkar__styleguide{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: baseline;
-    }
-
+  <body>
+    <style type="text/css">
+      #contents {
+      display:none;
+      padding:10px;
+      margin:10px;
+      border:1px solid #ccc;
+      }
     </style>
-    <main class="main">
 
-  <h1>Styleguide fyrir fyrsta stóra verkefnið í Vefforritun.</h2>
-    <br>
-    <h1 class="heading__styleguide">Texti:</h1>
-<p>Almennur HTML texti</p>
-<p class="text">Almennur texti stílaður með .text</p>
-<p class="text__forsida">Almennur texti fyrir forsíðuna</p>
-<p class="text__um">Almennur texti fyrir um-síðuna</p>
-<p class="nafn">Almennur texti fyrir nöfn</p>
+      <main class="main">
+        <h1>Styleguide fyrir fyrsta stóra verkefnið í Vefforritun.</h2>
+        <br>
+        <h1 class="heading__styleguide">Texti:</h1>
+        <p>Almennur HTML texti</p>
+        <p class="text">Almennur texti stílaður með .text</p>
+        <p class="text__forsida">Almennur texti fyrir forsíðuna</p>
+        <p class="text__um">Almennur texti fyrir um-síðuna</p>
+        <p class="nafn">Almennur texti fyrir nöfn</p>
 
-<h1>Almenn fyrirsögn</p>
-<h1 class=heading--one>Almenn fyrirsögn eitt</h1>
-<h2 class=heading--two>Almenn fyrirsögn tvö</h2>
-<h3 class=heading--three>Almenn fyrirsögn þrjú</h3>
-<h4 class=heading--four>Almenn fyrirsögn fjögur</h4>
-<h5 class=heading--five>Almenn fyrirsögn fimm</h5>
-<h5 class=heading--forsidaone>Almenn fyrirsögn eitt fyrir forsíðu</h5>
-<h5 class=heading--forsidatwo>Almenn fyrirsögn tvö fyrir forsíðu</h5>
-<h5 class=heading--form>Almenn fyrirsögn fyrir form</h5>
+        <h1>Almenn fyrirsögn</p>
+        <h1 class=heading--one>Almenn fyrirsögn eitt</h1>
+        <h2 class=heading--two>Almenn fyrirsögn tvö</h2>
+        <h3 class=heading--three>Almenn fyrirsögn þrjú</h3>
+        <h4 class=heading--four>Almenn fyrirsögn fjögur</h4>
+        <h5 class=heading--five>Almenn fyrirsögn fimm</h5>
+        <h5 class=heading--forsidaone>Almenn fyrirsögn eitt fyrir forsíðu</h5>
+        <h5 class=heading--forsidatwo>Almenn fyrirsögn tvö fyrir forsíðu</h5>
+        <h5 class=heading--form>Almenn fyrirsögn fyrir form</h5>
 
-<h1 class="heading__styleguide">Takkar:</h1>
+        <h1 class="heading__styleguide">Takkar:</h1>
 
-<div class="takkar__styleguide">
-<p class="button"> Takki</p>
-<p class="button button--valmynd"> Valmynd</p>
-<p class="button button--bida"> Bíða</p>
-<p class="button button--forsida"> Forsíða</p>
-<p class="button button--kaupa"> Kaupa</p>
-</div>
+        <div class="takkar__styleguide">
+        <p class="button"> Takki</p>
+        <p class="button button--valmynd"> Valmynd</p>
+        <p class="button button--bida"> Bíða</p>
+        <p class="button button--forsida"> Forsíða</p>
+        <p class="button button--kaupa"> Kaupa</p>
+      </div>
 
-<h1 class="heading__styleguide">Valmynd og header:</h1>
-<body>
-  <header class="header header--forsida">
-    <div class="menu__styleguide">
-      <nav>
-        <ul class="nav">
-          <div class="left">
-            <li>
-              <a href="index.html" class="nav__link">Valmynd á forsíðu</a>
-            </li>
+      <h1 class="heading__styleguide">Valmynd og header:</h1>
+
+      <header class="header header--forsida">
+        <div class="menu__styleguide">
+          <nav>
+            <ul class="nav">
+              <div class="left">
+                <li>
+                  <a href="index.html" class="nav__link">Valmynd á forsíðu</a>
+                </li>
+              </div>
+              <div class="right">
+                <li>
+                  <a href="um.html" class="anchor__valmynd">Undirsíða</a>
+                </li>
+                <li>
+                  <a href="kaupa.html" class="button button--valmynd">Menu</a>
+                </li>
+              </div>
+            </ul>
+          </nav>
+        </div>
+        <div class="mynd">
+          <h2 class="heading heading--forsidatwo">Þetta er fyrirsögn á forsíðu</h2>
+          <h1 class="heading heading--forsidaone">Forsíðufyrirsögn!</h1>
+          <a href="kaupa.html" class="button button--forsida">Takki</a>
+        </div>
+      </header>
+
+      <h1 class="heading__styleguide">Form:</h1>
+
+      <section class="form">
+        <fieldset class="content content--offset-1">
+          <legend class="heading heading--form">Persónuupplýsingar</legend>
+          <div class="input">
+            <label class="item" for="name"> Nafn:</label>
+            <input class="item" required type="text" id="name">
           </div>
-          <div class="right">
-            <li>
-              <a href="um.html" class="anchor__valmynd">Undirsíða</a>
-            </li>
-            <li>
-              <a href="kaupa.html" class="button button--valmynd">Menu</a>
-            </li>
+          <div class="input">
+            <label class="item" for="kennitala"> Kennitala:</label>
+            <input class="item" required type="text" id="kennitala" pattern="[0-9]{6}-[0-9]{4}"
+            required placeholder="123456-7890">
           </div>
-        </ul>
-      </nav>
-    </div>
-    <div class="mynd">
-      <h2 class="heading heading--forsidatwo">Þetta er fyrirsögn á forsíðu</h2>
-      <h1 class="heading heading--forsidaone">Forsíðufyrirsögn!</h1>
-      <a href="kaupa.html" class="button button--forsida">Takki</a>
-    </div>
-  </header>
+          <div class="input input__gender">
+            <label>Kyn:</label>
+            <div class="item">
+              <input class="radio" name="gender" type="radio" id="female" required>
+              <label class="inline-label" for="female">Kona</label>
+            </div>
+            <div class="item">
+              <input class="radio" name="gender" type="radio" id="male">
+              <label class="inline-label" for="male">Karl</label>
+            </div>
+            <div class="item">
+              <input class="radio" name="gender" type="radio" id="other">
+              <label class="inline-label" for="other">Annað</label>
+            </div>
+          </div>
+          <div class="input">
+            <label class="label" for="telephone"> Sími:</label>
+            <input class="textbox" type="text" id="telephone" pattern="+[0-9]{3} [0-9]{3} [0-9]{4}"
+            required placeholder="+354 812 3456">
+          </div>
+          <div class="input">
+            <label class="item" for="address"> Heimilisfang:</label>
+            <input class="item" type="text" id="address" required>
+          </div>
+          <div class="item">
+            <input id="checkbox" type="checkbox" checked>
+            <label class="inline-label" for="checkbox"> Skrá mig á póstlista</label>
+          </div>
+        </fieldset>
 
-<h1 class="heading__styleguide">Form:</h1>
+        <fieldset class="content content--offset-7">
+          <legend class="heading heading--form">Greiðsluupplýsingar</legend>
+          <div class="input">
+            <label for="fop"> Greiða með:</label>
+            <div class="item">
+              <select class="dropselect" id="fop" required>
+                <option value="card">Kreditkorti</option>
+                <option value="wire">Millifærslu</option>
+                <option value="cash">Reiðufé</option>
+              </select>
+            </div>
+          </div>
+          <div class="input">
+            <label class="item" for="cardholder"> Nafn á korti:</label>
+            <input class="item" required type="text" id="cardholder">
+          </div>
+          <div class="input">
+            <label class="item" for="card-no"> Nafn á korti:</label>
+            <input class="item" required type="text" id="card-no"
+            pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" placeholder="5999-9999-9999-9999">
+          </div>
+          <div class="input">
+            <label>Gildistími:</label>
+            <div class="item item__expiry">
+              <div class="dropselect">
+                <label class="label" for="month"> Mán</label>
+                <select class="dropselect dropselect--expiry" id="month" required>
+                  <option value="01">01</option>
+                  <option value="02">02</option>
+                  <option value="03">03</option>
+                  <option value="04">04</option>
+                  <option value="05">05</option>
+                  <option value="06">06</option>
+                  <option value="07">07</option>
+                  <option value="08">08</option>
+                  <option value="09">09</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+                <label class="label" for="year"> Ár</label>
+                <select class="dropselect dropselect--expiry" id="year" required>
+                  <option value="2017">2017</option>
+                  <option value="2018">2018</option>
+                  <option value="2019">2019</option>
+                  <option value="2020">2020</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </section>
 
-<main class="main">
-  <section class="form">
-    <fieldset class="content content--offset-1">
-      <legend class="heading heading--form">Persónuupplýsingar</legend>
-      <div class="input">
-        <label class="item" for="name"> Nafn:</label>
-        <input class="item" required type="text" id="name">
-      </div>
-      <div class="input">
-        <label class="item" for="kennitala"> Kennitala:</label>
-        <input class="item" required type="text" id="kennitala" pattern="[0-9]{6}-[0-9]{4}"
-        required placeholder="123456-7890">
-      </div>
-      <div class="input input__gender">
-        <label>Kyn:</label>
-        <div class="item">
-          <input class="radio" name="gender" type="radio" id="female" required>
-          <label class="inline-label" for="female">Kona</label>
-        </div>
-        <div class="item">
-          <input class="radio" name="gender" type="radio" id="male">
-          <label class="inline-label" for="male">Karl</label>
-        </div>
-        <div class="item">
-          <input class="radio" name="gender" type="radio" id="other">
-          <label class="inline-label" for="other">Annað</label>
-        </div>
-      </div>
-      <div class="input">
-        <label class="label" for="telephone"> Sími:</label>
-        <input class="textbox" type="text" id="telephone" pattern="+[0-9]{3} [0-9]{3} [0-9]{4}"
-        required placeholder="+354 812 3456">
-      </div>
-      <div class="input">
-        <label class="item" for="address"> Heimilisfang:</label>
-        <input class="item" type="text" id="address" required>
-      </div>
-      <div class="item">
-        <input id="checkbox" type="checkbox" checked>
-        <label class="inline-label" for="checkbox"> Skrá mig á póstlista</label>
-      </div>
-    </fieldset>
+      <button class="button button--kaupa">Panta</button>
 
-    <fieldset class="content content--offset-7">
-      <legend class="heading heading--form">Greiðsluupplýsingar</legend>
-      <div class="input">
-        <label for="fop"> Greiða með:</label>
-        <div class="item">
-          <select class="dropselect" id="fop" required>
-            <option value="card">Kreditkorti</option>
-            <option value="wire">Millifærslu</option>
-            <option value="cash">Reiðufé</option>
-          </select>
-        </div>
-      </div>
-      <div class="input">
-        <label class="item" for="cardholder"> Nafn á korti:</label>
-        <input class="item" required type="text" id="cardholder">
-      </div>
-      <div class="input">
-        <label class="item" for="card-no"> Nafn á korti:</label>
-        <input class="item" required type="text" id="card-no"
-        pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" placeholder="5999-9999-9999-9999">
-      </div>
-      <div class="input">
-        <label>Gildistími:</label>
-        <div class="item item__expiry">
-          <div class="dropselect">
-            <label class="label" for="month"> Mán</label>
-            <select class="dropselect dropselect--expiry" id="month" required>
-              <option value="01">01</option>
-              <option value="02">02</option>
-              <option value="03">03</option>
-              <option value="04">04</option>
-              <option value="05">05</option>
-              <option value="06">06</option>
-              <option value="07">07</option>
-              <option value="08">08</option>
-              <option value="09">09</option>
-              <option value="10">10</option>
-              <option value="11">11</option>
-              <option value="12">12</option>
-            </select>
-            <label class="label" for="year"> Ár</label>
-            <select class="dropselect dropselect--expiry" id="year" required>
-              <option value="2017">2017</option>
-              <option value="2018">2018</option>
-              <option value="2019">2019</option>
-              <option value="2020">2020</option>
-            </select>
+      <h1 class="heading__styleguide">Footer</h1>
+
+      <footer>
+        <div class="footer">
+          <div class="footerUpper">
+            <div class="footerLeft">
+              <p>Upplýsingar</p>
+              <p>58-12345</p>
+            </div>
+            <div class="footerRight">
+              <p>Opnunartími</p>
+              <p>Heimilisfang</p>
+              <p>Staður</p>
+            </div>
+          </div>
+          <div class="border"></div>
+          <div class="footerUnder">
+            <p>@ Vefforritunarmeistarar 2017</p>
           </div>
         </div>
+      </footer>
+
+      <h1 class="heading__styleguide">Tilvísanir</h1>
+
+      <div class="styleguide__quote">
+      <div class="quote" class="styleguide__quote">
+        <blockquote>
+          <p>
+            „Þessi vefsíða er líklega sú fallegasta sem ég hef séð!“<br>
+          </p>
+        </blockquote>
+        <p class="by">
+          — Bill Gates<br>
+        </p>
       </div>
-    </fieldset>
-  </section>
-
-  <button class="button button--kaupa">Panta</button>
-
-<h1 class="heading__styleguide">Footer</h1>
-
-<footer>
-  <div class="footer">
-    <div class="footerUpper">
-      <div class="footerLeft">
-        <p>Upplýsingar</p>
-        <p>58-12345</p>
       </div>
-      <div class="footerRight">
-        <p>Opnunartími</p>
-        <p>Heimilisfang</p>
-        <p>Staður</p>
+
+      <h1 class="heading__styleguide">Kóði</h1>
+
+      <p class="kodascript" href="javascript:void(0);" onClick="changeText(1); toggle_visibility('contents');" title="Show" id="show">Sýna kóða</>
+      <div id="contents" class="kodi">
+        <pre>
+          <code>
+
+            //Texti
+
+            .text{
+              margin-top: 0;
+              margin-bottom: 40px;
+
+              &__forsida {
+                font-size: 18px;
+              }
+            }
+            .text--um{
+              margin-top: 20px;
+              margin-bottom: 0px;
+            }
+
+            .heading {
+              width: 100%;
+              padding: 0;
+              font-family: "Roboto Slab", serif;
+              font-size: 2rem;
+
+              @-webkit-keyframes fadeIn {
+                0% { opacity: 0; }
+                100% { opacity: 1; }
+              }
+
+              &--one {
+                padding-right: 40px;
+                overflow-wrap: break-word;
+                font-size: 4rem;
+                font-weight: 700;
+              }
+
+              &--two {
+                font-size: 2rem;
+              }
+
+              &--forsidaone {
+                font-size: 4rem;
+                font-weight: 700;
+                opacity: 0;
+                animation: 1s fadeIn ease-in;
+                animation-fill-mode: forwards;
+                animation-delay: 2s;
+
+                @media (max-width: 450px) {
+                  font-size: 3rem;
+                }
+              }
+
+              &--forsidatwo {
+                font-size: 2rem;
+                opacity: 0;
+                animation: 1s fadeIn ease-in;
+                animation-fill-mode: forwards;
+                animation-delay: 1s;
+
+                @media (max-width: 450px) {
+                  font-size: 1.5rem;
+                }
+              }
+
+              &--three {
+                font-size: 24px;
+              }
+
+              &--four {
+                padding-bottom: 1em;
+                font-size: 1.5rem;
+                font-style: italic;
+              }
+
+              &--five {
+                padding-top: 5em;
+                font-size: 21px;
+                font-weight: bolder;
+                text-align: center;
+
+                @media (max-width: 599px) {
+                  padding-top: 40px;
+                }
+              }
+
+              &--form {
+                padding-bottom: 20px;
+                font-size: 1.5rem;
+              }
+
+            }
+
+            .nafn {
+              font-size: 21px;
+              font-weight: 600;
+            }
+
+            //Takkar
+
+            .button {
+              display: block;
+              width: 100%;
+              max-width: 5em;
+              padding: 10px 5px;
+              margin: auto;
+              margin-top: 2em;
+              overflow: hidden;
+              font-family: "Open Sans", helvetica, arial, sans-serif;
+              font-size: 1.5rem;
+              color: #eee;
+              text-align: center;
+              text-decoration: none;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              cursor: pointer;
+              background-color: #666;
+              border: 1px solid #666;
+              border-radius: 4px;
+
+              &:hover {
+                color: #eee;
+                background-color: #333;
+                transition-timing-function: ease;
+                transition-duration: 500ms;
+              }
+
+              &--valmynd {
+                padding: 4px 8px;
+                margin-top: 0;
+                font-size: 1rem;
+
+                @media (max-width: 400px) {
+                  display: none;
+                }
+              }
+
+              &--bida {
+                max-width: 8em;
+                margin-top: 0.5em;
+                margin-bottom: 1em;
+                font-size: 2rem;
+              }
+
+              &--forsida {
+                opacity: 0;
+                animation: 1s fadeIn ease-in;
+                animation-fill-mode: forwards;
+                animation-delay: 3s;
+              }
+
+              &--kaupa {
+                min-width: 250px;
+                margin-top: 0;
+                margin-bottom: 100px;
+                font-size: 1rem;
+
+                @media (max-width: 550px) {
+                  margin-bottom: 20px;
+                }
+              }
+            }
+
+            //Valmynd og header
+
+            nav { /* stylelint-disable-line */
+              display: flex;
+              align-items: center;
+              width: 100%;
+              margin: 0 auto;
+            }
+
+            .nav {
+              display: flex;
+              width: 100%;
+              max-width: 1200px;
+              padding: 10px 0;
+              flex-wrap: wrap;
+              justify-content: space-between;
+              margin: 0 auto;
+              list-style: none;
+
+              @media (max-width: 1239px) {
+                margin-right: 20px;
+                margin-left: 20px;
+              }
+            }
+
+            .menu {
+              position: fixed;
+              top: 0;
+              left: 0;
+              z-index: 1000;
+              display: flex;
+              flex-wrap: wrap;
+              width: 100%;
+              height: 50px;
+              background: rgba(0, 0, 0, 0.8);
+            }
+
+            .left {
+              display: flex;
+              font-weight: bolder;
+              flex-wrap: nowrap;
+              flex-direction: row;
+            }
+
+            .right {
+              display: inline-flex;
+              font-family: "Open Sans", sans-serif;
+              flex-direction: row;
+              align-items: center;
+            }
+
+            .nav__link {
+              padding: 0;
+              font-size: 24px;
+            }
+
+
+            a { /* stylelint-disable-line */
+              padding: 10px;
+              font-family: "Roboto Slab", serif;
+              color: #fff;
+              text-decoration: none;
+            }
+
+            .anchor__valmynd {
+              font-family: "Open Sans", sans-serif;
+            }
+
+            .header {
+              display: flex;
+              width: 100%;
+              margin: 0 auto;
+              margin-bottom: 2em;
+              opacity: 0.8;
+
+              &--forsida {
+                display: flex;
+                height: 900px;
+                background: transparent url("myndir/bg.jpg") no-repeat fixed 50% 50%;
+                background-size: cover;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+
+                @media (max-width: 450px) {
+                  height: 475px;
+                  background-position: left;
+                }
+              }
+
+              &--subpage {
+                display: flex;
+                height: 475px;
+                background: transparent url("myndir/bg-subpage.jpg") no-repeat fixed 50% 50%;
+                background-position: center;
+                flex-wrap: wrap;
+                background-size: cover;
+                @media (max-width: 450px) {
+                  background-position: left;
+                  background-size: auto;
+                }
+              }
+            }
+
+            .mynd {
+              display: flex;
+              width: 100%;
+              margin: 0 auto;
+              text-align: center;
+              flex-direction: column;
+
+              &__subpage {
+                display: flex;
+                max-width: 1200px;
+                color: #fff;
+                justify-content: center;
+                align-items: center;
+                text-align: left;
+                flex-direction: row;
+
+                @media (max-width: 1240px) {
+                  margin-right: 20px;
+                  margin-left: 20px;
+                }
+              }
+            }
+
+            //Form
+
+            $gutter: 20px;
+
+            .form {
+              display: flex;
+              margin-top: 80px;
+
+              @media (max-width: 550px) {
+                display: block;
+                margin-top: $gutter*2;
+              }
+            }
+
+            .content {
+              display: flex;
+              width: 32.3%;
+              border: 0;
+
+              &--offset-1 {
+                margin-right: $gutter;
+                margin-bottom: $gutter*2;
+                margin-left: 8.3%;
+                flex-direction: column;
+
+                @media (max-width: 999px) {
+                  width: 50%;
+                  margin-right: $gutter/2;
+                  margin-left: 0;
+                }
+
+                @media (max-width: 550px) {
+                  width: 100%;
+                  margin-right: 0;
+                }
+              }
+
+              &--offset-7 {
+                display: flex;
+                width: 32.3%;
+                margin-left: 17%;
+                flex-direction: column;
+                border: 0;
+
+                @media (max-width: 999px) {
+                  width: 50%;
+                  margin-right: 0;
+                  margin-left: $gutter/2;
+                }
+
+                @media (max-width: 550px) {
+                  width: 100%;
+                  margin-bottom: $gutter*2;
+                  margin-left: 0;
+                }
+              }
+            }
+
+            .input {
+              display: flex;
+              padding-bottom: 20px;
+              flex-direction: column;
+
+              &__gender {
+                justify-content: space-between;
+                height: 150px;
+                margin-left: 5px;
+              }
+            }
+
+            .item {
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+
+              &__expiry {
+                justify-content: space-between;
+              }
+            }
+
+            .inline-label {
+              padding-left: 20px;
+            }
+
+            input { /* stylelint-disable-line */
+              padding: 3px 0 3px 4px;
+              font-size: 1rem;
+              border: 1px solid rgba(0, 0, 0, 0.3);
+              border-style: solid;
+              border-radius: 5px;
+            }
+
+            .label {
+              display: flex;
+            }
+
+            .dropselect {
+              display: flex;
+              width: 100%;
+              font-size: 1rem;
+              justify-content: space-between;
+
+              &--expiry {
+                width: 30%;
+              }
+            }
+
+            //Footer
+
+            footer { /*stylelint-disable-line*/
+              width: 100%;
+              margin-top: 1em;
+              background: #000;
+              opacity: 0.8;
+            }
+
+            .footerUpper {
+              display: flex;
+              max-width: 1200px;
+              margin: auto;
+              flex-direction: row;
+              justify-content: center;
+            }
+
+            .footerLeft {
+              display: flex;
+              padding: 1em 3em;
+              color: #fff;
+              text-align: center;
+              flex-direction: column;
+            }
+
+            .footerRight {
+              display: flex;
+              padding: 1em 3em;
+              overflow-wrap: break-word;
+              color: #fff;
+              text-align: center;
+              flex-direction: column;
+            }
+
+            .footerUnder {
+              display: flex;
+              justify-content: center;
+              padding: 1em;
+              padding-bottom: none;
+              color: #fff;
+              border-top: 1px solid rgb(255, 255, 255);
+              opacity: 0.4;
+            }
+
+            @media (max-width: 600px) {
+              .footerLeft {
+                padding: 1em;
+              }
+
+              .footerRight {
+                padding: 1em;
+              }
+            }
+
+            //Tilvísanir
+
+            .quote {
+              float: right;
+              width: 55%;
+              padding-right: 30px;
+              padding-left: 80px;
+              margin: 50px 10px 50px 30px;
+              font-size: 1.5rem;
+              font-style: italic;
+
+              @media (max-width: 560px) {
+                float: none;
+                width: 100%;
+                padding-right: 10px;
+                padding-left: 10px;
+                margin-right: 0;
+                margin-left: 0;
+              }
+
+              @media (max-width: 680px) and (min-width: 561px) {
+                width: 50%;
+                padding-right: 0;
+                padding-left: 40px;
+              }
+
+              @media (max-width: 1130px) and (min-width: 870px) {
+                margin-bottom: 100px;
+              }
+
+              @media (max-width: 869px) and (min-width: 830px) {
+                margin-bottom: 130px;
+              }
+            }
+
+            .paragraph-quote {
+              margin: 0; /* gets rid of the default blockquote margin */
+            }
+
+            .by {
+              margin-top: 20px;
+              font-size: 14px;
+              font-style: normal;
+            }
+
+
+          </code>
+        </pre>
       </div>
-    </div>
-    <div class="border"></div>
-    <div class="footerUnder">
-      <p>@ Vefforritunarmeistarar 2017</p>
-    </div>
-  </div>
-</footer>
 
-<h1 class="heading__styleguide">Tilvísanir</h1>
-
-<div class="styleguide__quote">
-<div class="quote" class="styleguide__quote">
-  <blockquote>
-    <p>
-      „Þessi vefsíða er líklega sú fallegasta sem ég hef séð!“<br>
-    </p>
-  </blockquote>
-  <p class="by">
-    — Bill Gates<br>
-  </p>
-</div>
-</div>
-
-<h1 class="heading__styleguide">Kóði</h1>
-
-<p class="kodascript" href="javascript:void(0);" onClick="changeText(1); toggle_visibility('contents');" title="Show" id="show">Sýna kóða</>
-<div id="contents" class="kodi">
-<pre>
-  <code>
-
-    //Texti
-
-    .text{
-      margin-top: 0;
-      margin-bottom: 40px;
-
-      &__forsida {
-        font-size: 18px;
-      }
-    }
-    .text--um{
-      margin-top: 20px;
-      margin-bottom: 0px;
-    }
-
-    .heading {
-      width: 100%;
-      padding: 0;
-      font-family: "Roboto Slab", serif;
-      font-size: 2rem;
-
-      @-webkit-keyframes fadeIn {
-        0% { opacity: 0; }
-        100% { opacity: 1; }
-      }
-
-      &--one {
-        padding-right: 40px;
-        overflow-wrap: break-word;
-        font-size: 4rem;
-        font-weight: 700;
-      }
-
-      &--two {
-        font-size: 2rem;
-      }
-
-      &--forsidaone {
-        font-size: 4rem;
-        font-weight: 700;
-        opacity: 0;
-        animation: 1s fadeIn ease-in;
-        animation-fill-mode: forwards;
-        animation-delay: 2s;
-
-        @media (max-width: 450px) {
-          font-size: 3rem;
-        }
-      }
-
-      &--forsidatwo {
-        font-size: 2rem;
-        opacity: 0;
-        animation: 1s fadeIn ease-in;
-        animation-fill-mode: forwards;
-        animation-delay: 1s;
-
-        @media (max-width: 450px) {
-          font-size: 1.5rem;
-        }
-      }
-
-      &--three {
-        font-size: 24px;
-      }
-
-      &--four {
-        padding-bottom: 1em;
-        font-size: 1.5rem;
-        font-style: italic;
-      }
-
-      &--five {
-        padding-top: 5em;
-        font-size: 21px;
-        font-weight: bolder;
-        text-align: center;
-
-        @media (max-width: 599px) {
-          padding-top: 40px;
-        }
-      }
-
-      &--form {
-        padding-bottom: 20px;
-        font-size: 1.5rem;
-      }
-
-    }
-
-    .nafn {
-      font-size: 21px;
-      font-weight: 600;
-    }
-
-    //Takkar
-
-    .button {
-      display: block;
-      width: 100%;
-      max-width: 5em;
-      padding: 10px 5px;
-      margin: auto;
-      margin-top: 2em;
-      overflow: hidden;
-      font-family: "Open Sans", helvetica, arial, sans-serif;
-      font-size: 1.5rem;
-      color: #eee;
-      text-align: center;
-      text-decoration: none;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      cursor: pointer;
-      background-color: #666;
-      border: 1px solid #666;
-      border-radius: 4px;
-
-      &:hover {
-        color: #eee;
-        background-color: #333;
-        transition-timing-function: ease;
-        transition-duration: 500ms;
-      }
-
-      &--valmynd {
-        padding: 4px 8px;
-        margin-top: 0;
-        font-size: 1rem;
-
-        @media (max-width: 400px) {
-          display: none;
-        }
-      }
-
-      &--bida {
-        max-width: 8em;
-        margin-top: 0.5em;
-        margin-bottom: 1em;
-        font-size: 2rem;
-      }
-
-      &--forsida {
-        opacity: 0;
-        animation: 1s fadeIn ease-in;
-        animation-fill-mode: forwards;
-        animation-delay: 3s;
-      }
-
-      &--kaupa {
-        min-width: 250px;
-        margin-top: 0;
-        margin-bottom: 100px;
-        font-size: 1rem;
-
-        @media (max-width: 550px) {
-          margin-bottom: 20px;
-        }
-      }
-    }
-
-    //Valmynd og header
-
-    nav { /* stylelint-disable-line */
-      display: flex;
-      align-items: center;
-      width: 100%;
-      margin: 0 auto;
-    }
-
-    .nav {
-      display: flex;
-      width: 100%;
-      max-width: 1200px;
-      padding: 10px 0;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      margin: 0 auto;
-      list-style: none;
-
-      @media (max-width: 1239px) {
-        margin-right: 20px;
-        margin-left: 20px;
-      }
-    }
-
-    .menu {
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 1000;
-      display: flex;
-      flex-wrap: wrap;
-      width: 100%;
-      height: 50px;
-      background: rgba(0, 0, 0, 0.8);
-    }
-
-    .left {
-      display: flex;
-      font-weight: bolder;
-      flex-wrap: nowrap;
-      flex-direction: row;
-    }
-
-    .right {
-      display: inline-flex;
-      font-family: "Open Sans", sans-serif;
-      flex-direction: row;
-      align-items: center;
-    }
-
-    .nav__link {
-      padding: 0;
-      font-size: 24px;
-    }
-
-
-    a { /* stylelint-disable-line */
-      padding: 10px;
-      font-family: "Roboto Slab", serif;
-      color: #fff;
-      text-decoration: none;
-    }
-
-    .anchor__valmynd {
-      font-family: "Open Sans", sans-serif;
-    }
-
-    .header {
-      display: flex;
-      width: 100%;
-      margin: 0 auto;
-      margin-bottom: 2em;
-      opacity: 0.8;
-
-      &--forsida {
-        display: flex;
-        height: 900px;
-        background: transparent url("myndir/bg.jpg") no-repeat fixed 50% 50%;
-        background-size: cover;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-
-        @media (max-width: 450px) {
-          height: 475px;
-          background-position: left;
-        }
-      }
-
-      &--subpage {
-        display: flex;
-        height: 475px;
-        background: transparent url("myndir/bg-subpage.jpg") no-repeat fixed 50% 50%;
-        background-position: center;
-        flex-wrap: wrap;
-        background-size: cover;
-        @media (max-width: 450px) {
-          background-position: left;
-          background-size: auto;
-        }
-      }
-    }
-
-    .mynd {
-      display: flex;
-      width: 100%;
-      margin: 0 auto;
-      text-align: center;
-      flex-direction: column;
-
-      &__subpage {
-        display: flex;
-        max-width: 1200px;
-        color: #fff;
-        justify-content: center;
-        align-items: center;
-        text-align: left;
-        flex-direction: row;
-
-        @media (max-width: 1240px) {
-          margin-right: 20px;
-          margin-left: 20px;
-        }
-      }
-    }
-
-    //Form
-
-    $gutter: 20px;
-
-    .form {
-      display: flex;
-      margin-top: 80px;
-
-      @media (max-width: 550px) {
-        display: block;
-        margin-top: $gutter*2;
-      }
-    }
-
-    .content {
-      display: flex;
-      width: 32.3%;
-      border: 0;
-
-      &--offset-1 {
-        margin-right: $gutter;
-        margin-bottom: $gutter*2;
-        margin-left: 8.3%;
-        flex-direction: column;
-
-        @media (max-width: 999px) {
-          width: 50%;
-          margin-right: $gutter/2;
-          margin-left: 0;
-        }
-
-        @media (max-width: 550px) {
-          width: 100%;
-          margin-right: 0;
-        }
-      }
-
-      &--offset-7 {
-        display: flex;
-        width: 32.3%;
-        margin-left: 17%;
-        flex-direction: column;
-        border: 0;
-
-        @media (max-width: 999px) {
-          width: 50%;
-          margin-right: 0;
-          margin-left: $gutter/2;
-        }
-
-        @media (max-width: 550px) {
-          width: 100%;
-          margin-bottom: $gutter*2;
-          margin-left: 0;
-        }
-      }
-    }
-
-    .input {
-      display: flex;
-      padding-bottom: 20px;
-      flex-direction: column;
-
-      &__gender {
-        justify-content: space-between;
-        height: 150px;
-        margin-left: 5px;
-      }
-    }
-
-    .item {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-
-      &__expiry {
-        justify-content: space-between;
-      }
-    }
-
-    .inline-label {
-      padding-left: 20px;
-    }
-
-    input { /* stylelint-disable-line */
-      padding: 3px 0 3px 4px;
-      font-size: 1rem;
-      border: 1px solid rgba(0, 0, 0, 0.3);
-      border-style: solid;
-      border-radius: 5px;
-    }
-
-    .label {
-      display: flex;
-    }
-
-    .dropselect {
-      display: flex;
-      width: 100%;
-      font-size: 1rem;
-      justify-content: space-between;
-
-      &--expiry {
-        width: 30%;
-      }
-    }
-
-    //Footer
-
-    footer { /*stylelint-disable-line*/
-      width: 100%;
-      margin-top: 1em;
-      background: #000;
-      opacity: 0.8;
-    }
-
-    .footerUpper {
-      display: flex;
-      max-width: 1200px;
-      margin: auto;
-      flex-direction: row;
-      justify-content: center;
-    }
-
-    .footerLeft {
-      display: flex;
-      padding: 1em 3em;
-      color: #fff;
-      text-align: center;
-      flex-direction: column;
-    }
-
-    .footerRight {
-      display: flex;
-      padding: 1em 3em;
-      overflow-wrap: break-word;
-      color: #fff;
-      text-align: center;
-      flex-direction: column;
-    }
-
-    .footerUnder {
-      display: flex;
-      justify-content: center;
-      padding: 1em;
-      padding-bottom: none;
-      color: #fff;
-      border-top: 1px solid rgb(255, 255, 255);
-      opacity: 0.4;
-    }
-
-    @media (max-width: 600px) {
-      .footerLeft {
-        padding: 1em;
-      }
-
-      .footerRight {
-        padding: 1em;
-      }
-    }
-
-    //Tilvísanir
-
-    .quote {
-      float: right;
-      width: 55%;
-      padding-right: 30px;
-      padding-left: 80px;
-      margin: 50px 10px 50px 30px;
-      font-size: 1.5rem;
-      font-style: italic;
-
-      @media (max-width: 560px) {
-        float: none;
-        width: 100%;
-        padding-right: 10px;
-        padding-left: 10px;
-        margin-right: 0;
-        margin-left: 0;
-      }
-
-      @media (max-width: 680px) and (min-width: 561px) {
-        width: 50%;
-        padding-right: 0;
-        padding-left: 40px;
-      }
-
-      @media (max-width: 1130px) and (min-width: 870px) {
-        margin-bottom: 100px;
-      }
-
-      @media (max-width: 869px) and (min-width: 830px) {
-        margin-bottom: 130px;
-      }
-    }
-
-    .paragraph-quote {
-      margin: 0; /* gets rid of the default blockquote margin */
-    }
-
-    .by {
-      margin-top: 20px;
-      font-size: 14px;
-      font-style: normal;
-    }
-
-
-  </code>
-</pre>
-</div>
-
-</main>
-</body>
+    </main>
+  </body>
 </html>

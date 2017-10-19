@@ -1,0 +1,36 @@
+.kodascript {
+  text-decoration: underline; }
+
+.styleguide__quote {
+  margin-bottom: 12em; }
+
+.kodi {
+  display: block;
+  padding: 20px;
+  background-color: #eee;
+  border: 1px solid #999; }
+
+.heading__styleguide {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-size: 24px;
+  font-weight: bolder;
+  border-bottom: 1px solid #999; }
+
+.menu__styleguide {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  margin-top: -17.2em;
+  flex-wrap: wrap;
+  background: rgba(0, 0, 0, 0.8); }
+
+.takkar__styleguide {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline; }
